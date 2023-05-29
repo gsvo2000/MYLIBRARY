@@ -67,7 +67,7 @@ class Autor extends Controller
                 $imgNombre = "logo.png";
             }
             if ($id == "") {
-                $data = $this->model->insertarAutor($autor, $imgNombre);
+                $data = $this->model->insertar($autor, $imgNombre);
                 if ($data == "ok") {
                     $msg = array('msg' => 'Autor registrado', 'icono' => 'success');
                     if (!empty($name)) {
